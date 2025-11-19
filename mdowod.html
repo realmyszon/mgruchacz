@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mDowód</title>
+    <link rel="stylesheet" href="mdowod.css">
+</head>
+<body>
+    <div class="document-container">
+        <div class="header">
+            <h1>mDowód</h1>
+            <div class="time-date" id="currentTime">Czas: 13:31:30 4.10.2025</div>
+        </div>
+        
+        <div class="content">
+            <div class="photo-hologram-section">
+                <div class="photo-container">
+                    <div class="photo-frame" id="displayPhoto">
+                        <!-- Zdjęcie będzie wstawione tutaj -->
+                    </div>
+                </div>
+                <div class="hologram">
+                    <div class="hologram-effect"></div>
+                    <div class="polish-flag">
+                        <div class="white-stripe"></div>
+                        <div class="red-stripe"></div>
+                    </div>
+                    <div class="hologram-text">RP</div>
+                </div>
+            </div>
+            
+            <div class="info-section">
+                <div class="info-label">Imię (imiona)</div>
+                <div class="info-value" id="displayImie">SZYMON</div>
+                
+                <div class="info-label">Nazwisko</div>
+                <div class="info-value" id="displayNazwisko"></div>
+                
+                <div class="info-label">Obywatelstwo</div>
+                <div class="info-value" id="displayObywatelstwo">POLSKIE</div>
+                
+                <div class="info-label">Data urodzenia</div>
+                <div class="info-value" id="displayDataUrodzenia">27.08.2007</div>
+            </div>
+            
+            <div class="pesel-section">
+                <div class="info-label">Numer PESEL</div>
+                <div class="pesel-number" id="displayPesel"></div>
+            </div>
+            
+            <div class="status">
+                • Dokument ważny
+            </div>
+            
+            <button class="confirm-btn" onclick="goBack()">
+                • Powrót do formularza
+            </button>
+        </div>
+        
+        <div class="bottom-nav">
+            <div class="nav-item">Polipit</div>
+            <div class="nav-item active">Dokumenty</div>
+            <div class="nav-item">Usługi</div>
+            <div class="nav-item">Kod QR</div>
+            <div class="nav-item">Więcej</div>
+        </div>
+    </div>
+    
+    <script src="mdowod.js"></script>
+</body>
+</html>
